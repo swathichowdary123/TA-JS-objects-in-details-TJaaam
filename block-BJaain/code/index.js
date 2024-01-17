@@ -1,8 +1,8 @@
-console.log(this.document === document); // Output
+console.log(this.document === document); -true
 
 // ------------
 
-console.log(this === window); //Output
+console.log(this === window); -true
 
 // ------------
 
@@ -17,7 +17,7 @@ function f1() {
   'use strict';
   return this;
 }
-console.log(f1() === window); //Output
+console.log(f1() === window); -undefined
 
 // ------------
 
@@ -26,7 +26,7 @@ function foo() {
   console.log(this === window);
 }
 
-foo(); //Output ??
+foo(); -true
 
 // ------------
 
