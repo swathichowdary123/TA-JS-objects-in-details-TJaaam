@@ -86,7 +86,7 @@ Cat.prototype.constructor = Cat;
 
 // Cat-specific methods
 Cat.prototype.meow = function () {
-    console.log(`I am ${this.name} and I can do meow meow 😹`);
+    console.log(`I am ${this.name} and I can do meow meow`);
 };
 
 Cat.prototype.changeName = function (newName) {
