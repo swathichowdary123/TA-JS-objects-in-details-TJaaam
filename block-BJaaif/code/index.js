@@ -5,11 +5,10 @@
 /*** CHALLENGE 1 of 1 ***/
 
 function makePerson(name, age) {
-  // add code here
-  var person = Object.create(personMethods);
-  person.name = name;
-  person.age = age;
-  return person;
+  let obj={};
+  obj.name=name;
+  obj.age=age;
+  return obj;
 }
 
 var vicky = makePerson('Vicky', 24);
