@@ -26,6 +26,45 @@ Methods:
 Getter
 
 - `length`: returns the current length of the stack.
+class Stack {
+  constructor() {
+    this.stack = [];
+  }
+
+  push(value) {
+    this.stack.push(value);
+  }
+
+  pop() {
+    this.stack.pop();
+  }
+
+  peek(index = this.stack.length - 1) {
+    if (index >= 0 && index < this.stack.length) {
+      return this.stack[index];
+    } else {
+      console.log("Invalid index");
+    }
+  }
+
+  reverse() {
+    this.stack.reverse();
+    return this.stack;
+  }
+
+  isEmpty() {
+    return this.stack.length === 0;
+  }
+
+  displayStack() {
+    return this.stack.join(' ');
+  }
+
+  get length() {
+    return this.stack.length;
+  }
+}
+
 
 #### Test
 
@@ -63,6 +102,43 @@ Methods:
 Getter
 
 - `length`: returns the current length of the stack.
+class Queue {
+  constructor() {
+    this.queue = [];
+  }
+
+  enqueue(item) {
+    this.queue.push(item);
+  }
+
+  dequeue() {
+    if (!this.isEmpty()) {
+      this.queue.shift();
+    } else {
+      console.log("Queue is empty. Cannot dequeue.");
+    }
+  }
+
+  peek(index = 0) {
+    if (index >= 0 && index < this.queue.length) {
+      return this.queue[index];
+    } else {
+      console.log("Invalid index");
+    }
+  }
+
+  isEmpty() {
+    return this.queue.length === 0;
+  }
+
+  displayQueue() {
+    return this.queue.join(' ');
+  }
+
+  get length() {
+    return this.queue.length;
+  }
+}
 
 #### Test
 
