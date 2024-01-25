@@ -8,3 +8,15 @@ Convert the give image into class using inheritance.
 Property ending with `()` is method. And others are properties.
 
 ![Inheritance](../assets/inheritance.png)
+
+// Base class
+class LivingBeing {
+    constructor(name) {
+        this.name = name;
+    }
+
+    // Method
+    eat() {
+        console.log(`${this.name} is eating.`);
+    }
+}
